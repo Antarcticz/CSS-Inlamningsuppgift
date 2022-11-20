@@ -1,0 +1,17 @@
+main .main-top {
+    @include flex(column, space-evenly, center, nowrap);
+    @include size(100%, 60vh);
+    background-image: url(images/matix2.png);
+    background-repeat: round;
+
+    h1 {
+        text-shadow: $text-shadow-white;
+    }
+    h1 .color-white {
+        color: #fff;
+        text-shadow: $text-shadow-black;
+    }
+    .uknown-logo {
+        @include size(40vh, 40vh);
+    }
+}

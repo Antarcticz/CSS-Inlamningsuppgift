@@ -1,0 +1,5 @@
+header .topnav {
+    @include flex(row, space-around, center, nowrap);
+    @include size(100%, 6rem);
+    @include topnav($active-color, $hover-color);
+}
