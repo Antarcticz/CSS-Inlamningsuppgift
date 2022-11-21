@@ -5,11 +5,12 @@ main .main-top {
     background-repeat: round;
 
     h1 {
-        text-shadow: $text-shadow-white;
+        text-shadow: $text-shadow-white2;
+        text-align: center;
     }
-    h1 .color-white {
+    .color-white {
         color: #fff;
-        text-shadow: $text-shadow-black;
+        text-shadow: $text-shadow-black2;
     }
     .uknown-logo {
         @include size(40vh, 40vh);

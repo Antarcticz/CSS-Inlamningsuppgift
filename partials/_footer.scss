@@ -1,5 +1,5 @@
 footer {
     @include flex(row, center, center, nowrap);
-    @include size(100%, 7rem);
+    @include size(100%, 6rem);
     font-weight: bold;
 }

@@ -6,6 +6,8 @@ header .topnav {
   flex-wrap: nowrap;
   width: 100%;
   height: 6rem;
+  position: fixed;
+  background-color: #fff;
 }
 header .topnav .topnav-a a {
   padding: 1rem;
@@ -15,11 +17,29 @@ header .topnav .topnav-a a {
   font-size: 1rem;
   font-weight: bold;
 }
-header .topnav .active {
-  color: #0693e3;
+header .topnav .topnav-a .active {
+  color: #1279be;
 }
 header .topnav a:hover {
-  color: #1279be;
+  color: #0693e3;
+}
+header .topnav .topnav-logo-h1-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .topnav .uknown-logo-small {
+  width: 3vh;
+  height: 3vh;
+}
+header .topnav h1 {
+  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+}
+header .topnav .color-white {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 main .main-top {
@@ -35,8 +55,9 @@ main .main-top {
 }
 main .main-top h1 {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-align: center;
 }
-main .main-top h1 .color-white {
+main .main-top .color-white {
   color: #fff;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
@@ -45,9 +66,10 @@ main .main-top .uknown-logo {
   height: 40vh;
 }
 
-main .main-mid {
+.white-block {
   width: 100%;
-  height: 7rem;
+  height: 6rem;
+  background-color: #fff;
 }
 
 main .main-bottom {
@@ -87,7 +109,7 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
   font-weight: bold;
 }
 
@@ -95,5 +117,5 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "PT Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */

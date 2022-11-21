@@ -2,4 +2,20 @@ header .topnav {
     @include flex(row, space-around, center, nowrap);
     @include size(100%, 6rem);
     @include topnav($active-color, $hover-color);
+    position: fixed;
+    background-color: $background-color-1;
+
+    .topnav-logo-h1-wrap {
+        @include flex(row, center, center, nowrap);
+    }
+    .uknown-logo-small {
+        @include size(3vh, 3vh);
+    }
+    h1 {
+        text-shadow: $text-shadow-white1;
+    }
+    .color-white {
+        color: #fff;
+        text-shadow: $text-shadow-black1;
+    }
 }

@@ -1,0 +1,4 @@
+.white-block {
+    @include size(100%, 6rem);
+    background-color: $background-color-1;
+}
