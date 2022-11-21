@@ -1,5 +1,14 @@
 footer {
-    @include flex(row, center, center, nowrap);
     @include size(100%, 6rem);
+    @include flex(row, center, center, nowrap);
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    footer {
+        @include flex(row, center, center, nowrap);
+        @include size(100%, 3rem);
+        font-weight: bold;
+    }
+}
+

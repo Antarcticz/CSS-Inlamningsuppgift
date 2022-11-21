@@ -1,6 +1,6 @@
 main .main-top {
-    @include flex(column, space-evenly, center, nowrap);
-    @include size(100%, 60vh);
+    @include flex(column, space-around, center, nowrap);
+    @include size(100%, 100%);
     background-image: url(images/matix2.png);
     background-repeat: round;
 
@@ -13,6 +13,28 @@ main .main-top {
         text-shadow: $text-shadow-black2;
     }
     .uknown-logo {
-        @include size(40vh, 40vh);
+        @include size(20%, 20%);
+        // @include size(40vh, 40vh);
     }
 }
+
+// @media screen and (max-width: 600px) {
+//     main .main-top {
+//         @include flex(column, space-evenly, center, nowrap);
+//         @include size(100%, 60vh);
+//         background-image: url(images/matix2.png);
+//         background-repeat: round;
+    
+//         h1 {
+//             text-shadow: $text-shadow-white2;
+//             text-align: center;
+//         }
+//         .color-white {
+//             color: #fff;
+//             text-shadow: $text-shadow-black2;
+//         }
+//         .uknown-logo {
+//             @include size(20%, 20%);
+//         }
+//     } 
+// }

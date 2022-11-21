@@ -2,3 +2,10 @@
     @include size(100%, 6rem);
     background-color: $background-color-1;
 }
+
+@media screen and (max-width: 600px) {
+    .white-block {
+        @include size(100%, 2rem);
+        background-color: $background-color-1;
+    }
+}
