@@ -14,7 +14,17 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 750px) {
     * {
         margin: 0;
         padding: 0;
@@ -24,5 +34,12 @@
     }
 }
 
-
-
+@media screen and (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+    }
+}

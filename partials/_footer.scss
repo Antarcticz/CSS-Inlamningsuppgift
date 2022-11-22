@@ -4,10 +4,26 @@ footer {
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+    footer {
+        @include flex(row, center, center, nowrap);
+        @include size(100%, 4rem);
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 750px) {
     footer {
         @include flex(row, center, center, nowrap);
         @include size(100%, 3rem);
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        @include flex(row, center, center, nowrap);
+        @include size(100%, 2rem);
         font-weight: bold;
     }
 }

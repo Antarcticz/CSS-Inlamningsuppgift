@@ -12,7 +12,7 @@ main .main-bottom {
         @include flex(row, center, center, nowrap);
     }
     .broschyr {
-        @include size(35%, 100%);
+        @include size(70%, 50vh);
         // @include size(70vh, 50vh);
         padding: 1rem;
     }
@@ -20,7 +20,8 @@ main .main-bottom {
         text-align: center;
     }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1080px) {
     main .main-bottom {
         @include flex(column, space-evenly, center, nowrap);
         background-color: $background-color-2;
@@ -35,7 +36,31 @@ main .main-bottom {
             @include flex(column, center, center, nowrap);
         }
         .broschyr {
-            @include size(35%, 100%);
+            @include size(70%, 50%);
+            padding: 1rem;
+        }
+        .header-wrap {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main .main-bottom {
+        @include flex(column, space-evenly, center, nowrap);
+        background-color: $background-color-2;
+        
+        .color-white {
+            color: #fff;
+        }
+        .header-wrap {
+            padding: 2rem;
+        }
+        .broschyr-wrap {
+            @include flex(column, center, center, nowrap);
+        }
+        .broschyr {
+            @include size(60%, 50%);
             padding: 1rem;
         }
         .header-wrap {

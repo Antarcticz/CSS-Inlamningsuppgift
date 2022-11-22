@@ -3,7 +3,21 @@
     background-color: $background-color-1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+    .white-block {
+        @include size(100%, 4rem);
+        background-color: $background-color-1;
+    } 
+}
+
+@media screen and (max-width: 750px) {
+    .white-block {
+        @include size(100%, 3rem);
+        background-color: $background-color-1;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .white-block {
         @include size(100%, 2rem);
         background-color: $background-color-1;
