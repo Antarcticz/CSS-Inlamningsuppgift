@@ -1,12 +1,12 @@
 footer {
     @include size(100%, 6rem);
-    @include flex(row, center, center, nowrap);
+    @include flex(row, center, center);
     font-weight: bold;
 }
 
 @media screen and (max-width: 1080px) {
     footer {
-        @include flex(row, center, center, nowrap);
+        @include flex(row, center, center);
         @include size(100%, 4rem);
         font-weight: bold;
     }
@@ -14,7 +14,7 @@ footer {
 
 @media screen and (max-width: 750px) {
     footer {
-        @include flex(row, center, center, nowrap);
+        @include flex(row, center, center);
         @include size(100%, 3rem);
         font-weight: bold;
     }
@@ -22,7 +22,7 @@ footer {
 
 @media screen and (max-width: 400px) {
     footer {
-        @include flex(row, center, center, nowrap);
+        @include flex(row, center, center);
         @include size(100%, 2rem);
         font-weight: bold;
     }

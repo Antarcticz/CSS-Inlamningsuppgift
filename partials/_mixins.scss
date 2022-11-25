@@ -3,28 +3,44 @@
     height: $height;
 }
 
-@mixin flex($direction, $justify, $align, $wrap:nowrap) {
+@mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-    flex-wrap: $wrap;
 }
 
 @mixin topnav ($hover-color, $active-color) {
-    .topnav-a a{
+    .topnav-a {
+        @include flex(row, space-between, center);
+    }
+
+    a {
         padding: 1rem;
         text-decoration: none;
         color: #000;
         text-align: center;
-        font-size: 1rem;
         font-weight: bold;
     }
-    .topnav-a .active {
+    .active {
         color:$active-color;
     }
     a:hover {
         color: $hover-color;
     }
-    
+    @media screen and (max-width: 1080px) {
+        a {
+            padding: 0.7rem;
+        }
+    }
+    @media screen and (max-width: 780px) {
+        a {
+            padding: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        a {
+            padding: 0.2rem;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/header";
-@import "partials/main";
+@import "partials/main-mid";
 @import "partials/main-top";
 @import "partials/white-block";
 @import "partials/main-bottom";
@@ -12,34 +12,38 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-@media screen and (max-width: 1080px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: medium;
+    @media screen and (max-width: 1080px) {
+        h1, span, a {
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 0.9rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
     }
-}
-
-@media screen and (max-width: 750px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: small;
+    @media screen and (max-width: 780px) {
+        h1, span, a {
+            font-size: 0.6rem;
+        }
+        h2 {
+            font-size: 0.5rem;
+        }
+        p {
+            font-size: 0.4rem;
+        }
     }
-}
-
-@media screen and (max-width: 400px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: smaller;
+    @media screen and (max-width: 540px) {
+        h1, span, a {
+            font-size: 0.5rem;
+        }
+        h2 {
+            font-size: 0.4rem;
+        }
+        p {
+            font-size: 0.3rem;
+        }
     }
 }

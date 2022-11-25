@@ -1,5 +1,5 @@
 main .main-top {
-    @include flex(column, space-evenly, center, nowrap);
+    @include flex(column, space-evenly, center);
     @include size(100%, 60vh);
     background-image: url(images/matix2.png);
     background-repeat: round;
@@ -20,7 +20,7 @@ main .main-top {
 
 @media screen and (max-width: 1080px) {
     main .main-top {
-        @include flex(column, space-evenly, center, nowrap);
+        @include flex(column, space-evenly, center);
         @include size(100%, 50vh);
         background-image: url(images/matix2.png);
         // background-repeat: round;
@@ -39,9 +39,9 @@ main .main-top {
     } 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     main .main-top {
-        @include flex(column, space-evenly, center, nowrap);
+        @include flex(column, space-evenly, center);
         @include size(100%, 30vh);
         background-image: url(images/matix2.png);
         // background-repeat: round;
@@ -60,9 +60,9 @@ main .main-top {
     } 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
     main .main-top {
-        @include flex(column, space-evenly, center, nowrap);
+        @include flex(column, space-evenly, center);
         @include size(100%, 20vh);
         background-image: url(images/matix2.png);
         // background-repeat: round;

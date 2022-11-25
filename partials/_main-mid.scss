@@ -1,0 +1,56 @@
+main .main-mid {
+    @include flex(column, space-evenly, center);
+    background-color: $background-color-1;
+
+    .header-wrap {
+        padding: 2rem;
+        text-align: center;
+    }
+    .product-wrap1 {
+        @include flex(row, space-between, center);
+    }
+    .logotype1 {
+        @include size(70%, 30vh);
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    main .main-mid {
+        @include flex(column, space-evenly, center);
+        background-color: $background-color-1;
+        
+        .header-wrap {
+            padding: 2rem;
+            text-align: center;
+        }
+        .product-wrap1 {
+            @include flex(row, center, center);
+        }
+        .logotype1 {
+            @include size(20%, 30%);
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    main .main-mid {
+        @include flex(column, space-evenly, center);
+        background-color: $background-color-1;
+        
+        .header-wrap {
+            padding: 1rem;
+            text-align: center;
+        }
+        .product-wrap1 {
+            @include flex(row, center, center);
+        }
+        .logotype1 {
+            @include size(25%, 30%);
+            padding: 1rem;
+        }
+    }
+}
+
+
