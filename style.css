@@ -448,6 +448,38 @@ main .main-bottom .conact-form-wrap .btn-primary:hover, main .main-bottom .conac
 main .main-bottom .conact-form-wrap .btn-primary:active {
   background-color: hsl(202deg, 95%, 41%);
 }
+main .main-bottom .face-img-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 20vh;
+}
+main .main-bottom .face-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vh;
+  height: 20vh;
+}
+main .main-bottom .about-text-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 52%;
+  height: 20vh;
+}
+main .main-bottom .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+  color: #fff;
+}
 
 footer {
   width: 100%;

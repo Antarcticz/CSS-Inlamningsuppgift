@@ -54,6 +54,27 @@ main .main-bottom {
         @include size(40%, 50vh);
         @include contact-from;
     }
+    .face-img-wrap {
+        @include flex(row, space-between, center);
+        @include size(50%, 20vh);
+        // border: 1px solid red;
+    }
+    .face-img {
+        @include flex(column, space-between, center);
+        @include size(20vh, 20vh);
+        // border: 1px solid green;
+    }
+    .about-text-wrap {
+        @include flex(row, space-between, center);
+        @include size(52%, 20vh);
+        // border: 1px solid pink;
+    }
+    .about-text {
+        @include flex(column, space-between, center);
+        padding-bottom: 5rem;
+        // border: 1px solid yellow;
+        color: $text-color-white;
+    }
 }
 
 
