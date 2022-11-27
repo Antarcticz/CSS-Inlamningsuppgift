@@ -2,29 +2,15 @@ footer {
     @include size(100%, 6rem);
     @include flex(row, center, center);
     font-weight: bold;
-}
 
-@media screen and (max-width: 1080px) {
-    footer {
-        @include flex(row, center, center);
+    @media screen and (max-width: 1080px) {
         @include size(100%, 4rem);
-        font-weight: bold;
     }
-}
-
-@media screen and (max-width: 750px) {
-    footer {
-        @include flex(row, center, center);
+    @media screen and (max-width: 750px) {
         @include size(100%, 3rem);
-        font-weight: bold;
     }
-}
-
-@media screen and (max-width: 400px) {
-    footer {
-        @include flex(row, center, center);
+    @media screen and (max-width: 400px) {
         @include size(100%, 2rem);
-        font-weight: bold;
     }
 }
 

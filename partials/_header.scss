@@ -6,93 +6,37 @@ header .topnav {
     background-color: $background-color-1;
     box-shadow: 0px 4px 8px #00000040;
 
+    @media screen and (max-width: 1080px) {
+        @include size(100%, 4rem);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(100%, 3rem);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(100%, 2rem);
+    }
     .topnav-logo-h1-wrap {
         @include flex(row, center, center);
     }
     .uknown-logo-small {
         @include size(3vh, 3vh);
+
+        @media screen and (max-width: 1080px) {
+            @include size(1.9vh, 1.9vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(1.7vh, 1.7vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(1.5vh, 1.5vh);
+        }
     }
     h1 {
         text-shadow: $text-shadow-white1;
     }
     .color-white {
-        color: #fff;
+        color: $text-color-white;
         text-shadow: $text-shadow-black1;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    header .topnav {
-        @include flex(row, space-around, center);
-        @include size(100%, 4rem);
-        @include topnav($active-color, $hover-color);
-        position: fixed;
-        background-color: $background-color-1;
-        box-shadow: 0px 4px 8px #00000040;
-    
-        .topnav-logo-h1-wrap {
-            @include flex(row, center, center);
-        }
-        .uknown-logo-small {
-            @include size(1.9vh, 1.9vh);
-        }
-        h1 {
-            text-shadow: $text-shadow-white1;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black1;
-        }
-    }
-}
-
-@media screen and (max-width: 780px) {
-    header .topnav {
-        @include flex(row, space-around, center);
-        @include size(100%, 3rem);
-        @include topnav($active-color, $hover-color);
-        position: fixed;
-        background-color: $background-color-1;
-        box-shadow: 0px 2px 8px #00000040;
-    
-        .topnav-logo-h1-wrap {
-            @include flex(row, center, center);
-        }
-        .uknown-logo-small {
-            @include size(1.7vh, 1.7vh);
-        }
-        h1 {
-            text-shadow: $text-shadow-white1;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black1;
-        }
-    }
-}
-
-@media screen and (max-width: 540px) {
-    header .topnav {
-        @include flex(row, space-around, center);
-        @include size(100%, 2rem);
-        @include topnav($active-color, $hover-color);
-        position: fixed;
-        background-color: $background-color-1;
-        box-shadow: 0px 2px 8px #00000040;
-    
-        .topnav-logo-h1-wrap {
-            @include flex(row, center, center);
-        }
-        .uknown-logo-small {
-            @include size(1.5vh, 1.5vh);
-        }
-        h1 {
-            text-shadow: $text-shadow-white1;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black1;
-        }
     }
 }
 

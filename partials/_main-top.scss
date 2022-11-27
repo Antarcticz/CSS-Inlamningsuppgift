@@ -4,79 +4,35 @@ main .main-top {
     background-image: url(images/matix2.png);
     background-repeat: round;
 
+    @media screen and (max-width: 1080px) {
+        @include size(100%, 50vh);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(100%, 30vh);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(100%, 20vh);
+    }
+
     h1 {
         text-shadow: $text-shadow-white2;
         text-align: center;
     }
     .color-white {
-        color: #fff;
+        color: $text-color-white;
         text-shadow: $text-shadow-black2;
     }
     .uknown-logo {
         @include size(30vh, 30vh);
-        // @include size(40vh, 40vh);
-    }
-}
 
-@media screen and (max-width: 1080px) {
-    main .main-top {
-        @include flex(column, space-evenly, center);
-        @include size(100%, 50vh);
-        background-image: url(images/matix2.png);
-        // background-repeat: round;
-    
-        h1 {
-            text-shadow: $text-shadow-white2;
-            text-align: center;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black2;
-        }
-        .uknown-logo {
+        @media screen and (max-width: 1080px) {
             @include size(25vh, 25vh);
         }
-    } 
-}
-
-@media screen and (max-width: 780px) {
-    main .main-top {
-        @include flex(column, space-evenly, center);
-        @include size(100%, 30vh);
-        background-image: url(images/matix2.png);
-        // background-repeat: round;
-    
-        h1 {
-            text-shadow: $text-shadow-white2;
-            text-align: center;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black2;
-        }
-        .uknown-logo {
+        @media screen and (max-width: 780px) {
             @include size(15vh, 15vh);
         }
-    } 
-}
-
-@media screen and (max-width: 540px) {
-    main .main-top {
-        @include flex(column, space-evenly, center);
-        @include size(100%, 20vh);
-        background-image: url(images/matix2.png);
-        // background-repeat: round;
-    
-        h1 {
-            text-shadow: $text-shadow-white2;
-            text-align: center;
-        }
-        .color-white {
-            color: #fff;
-            text-shadow: $text-shadow-black2;
-        }
-        .uknown-logo {
+        @media screen and (max-width: 540px) {
             @include size(10vh, 10vh);
         }
-    } 
+    }
 }

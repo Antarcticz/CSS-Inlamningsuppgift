@@ -21,6 +21,16 @@
         color: #000;
         text-align: center;
         font-weight: bold;
+
+        @media screen and (max-width: 1080px) {
+            padding: 0.7rem;
+        }
+        @media screen and (max-width: 780px) {
+            padding: 0.5rem;
+        }
+        @media screen and (max-width: 540px) {
+            padding: 0.2rem;
+        }
     }
     .active {
         color:$active-color;
@@ -28,19 +38,121 @@
     a:hover {
         color: $hover-color;
     }
-    @media screen and (max-width: 1080px) {
-        a {
-            padding: 0.7rem;
+}
+
+@mixin contact-from {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #d8d8d8;
+
+    input, textarea {
+        font-size: 0.8rem;
+
+        @media screen and (max-width: 780px) {
+            font-size: 0.5rem;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 0.4rem;
         }
     }
-    @media screen and (max-width: 780px) {
-        a {
-            padding: 0.5rem;
+
+    .input-group-wrap {
+        @include flex(row, space-between, center);
+    }
+    .input-group {
+        margin-bottom: 1rem;
+        width: 45%;
+
+        label {
+            font-weight: bold;
+            font-size: 0.9rem;
+
+            @media screen and (max-width: 780px) {
+                font-size: 0.7rem;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 0.5rem;
+            }
         }
     }
-    @media screen and (max-width: 540px) {
-        a {
-            padding: 0.2rem;
+    .input-group2 {
+        margin-bottom: 1rem;
+
+        label {
+            font-weight: bold;
+            font-size: 0.9rem;
+
+            @media screen and (max-width: 780px) {
+                font-size: 0.7rem;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 0.5rem;
+            }
         }
+    }
+    .input-group3 {
+        @include flex(row, flex-start, center);
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+
+        @media screen and (max-width: 780px) {
+            font-size: 0.7rem;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 0.5rem;
+        }
+    }
+    .terms-text {
+        padding-left: .25rem;
+    }
+    .input-label {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    .form-control {
+        width: 100%;
+        padding: .5rem;
+        border-radius: .5rem;
+        border: 1px solid #d8d8d8;
+    }
+    .form-control2 {
+        @include size(100%, 10vh);
+        padding: .5rem;
+        border-radius: .5rem;
+        border: 1px solid #d8d8d8;
+
+        @media screen and (max-width: 780px) {
+            @include size(100%, 5vh);
+        }
+    }
+
+    .btn {
+        padding: .8em 1.4em;
+        border-radius: .5rem;
+        border: 0;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+
+        @media screen and (max-width: 540px) {
+            font-size: .5rem;
+        }
+    }
+    .btn-block {
+        width: 100%;
+    }
+    .btn-primary {
+        background-color: hsl(202, 95%, 46%);
+        color: #ffffff;
+        transition: background 70ms;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        background-color: hsl(202, 95%, 51%);
+    }
+    .btn-primary:active {
+        background-color: hsl(202, 95%, 41%);
     }
 }
+

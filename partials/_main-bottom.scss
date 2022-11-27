@@ -3,167 +3,58 @@ main .main-bottom {
     background-color: $background-color-2;
     
     .color-white {
-        color: #fff;
+        color: $text-color-white;
     }
     .header-wrap {
         padding: 2rem;
         text-align: center;
+
+        @media screen and (max-width: 780px) {
+            padding: 1rem;
+        }
     }
     .broschyr-wrap {
         @include flex(row, center, center);
+
+        @media screen and (max-width: 1080px) {
+            @include flex(column, center, center);
+        }
     }
     .broschyr {
-        @include size(70%, 50vh);
-        // @include size(70vh, 50vh);
+        @include size(70%, 45vh);
         padding: 1rem;
+
+        @media screen and (max-width: 1080px) {
+            @include size(70%, 50%);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(60%, 50%);
+        }
     }
     .product-wrap2 {
         @include flex(row, space-evenly, center);
+
+        @media screen and (max-width: 1080px) {
+            @include flex(row, center, center);
+        }
     }
     .logotype2 {
         @include size(70%, 30vh);
         padding: 1rem;
+
+        @media screen and (max-width: 1080px) {
+            @include size(25%, 50%);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(30%, 50%);
+        }
     }
     .conact-form-wrap {
         @include flex(column, center, center);
         @include size(40%, 50vh);
-        // width: 500px;
-        background-color: #fff;
-        padding: 1rem;
-        border-radius: .5rem;
-        border: 1px solid #d8d8d8;
-
-        .input-group-wrap {
-            @include flex(row, space-between, center);
-        }
-        .input-group {
-            margin-bottom: 1rem;
-            width: 45%;
-
-            label {
-                font-weight: bold;
-                font-size: 0.9rem;
-            }
-        }
-        .input-group2 {
-            margin-bottom: 1rem;
-
-            label {
-                font-weight: bold;
-                font-size: 0.9rem;
-            }
-        }
-        .input-group3 {
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-        .input-label {
-            // display: block;
-            width: 100%;
-            margin-bottom: .5rem;
-        }
-        .form-control {
-            // display: block;
-            width: 100%;
-            padding: .5rem;
-            border-radius: .5rem;
-            border: 1px solid #d8d8d8;
-        }
-        .form-control2 {
-            @include size(100%, 10vh);
-            padding: .5rem;
-            border-radius: .5rem;
-            border: 1px solid #d8d8d8;
-        }
-    
-        .btn {
-            padding: .8em 1.4em;
-            border-radius: .5rem;
-            border: 0;
-            outline: none;
-            text-transform: uppercase;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .btn-block {
-            width: 100%;
-        }
-        .btn-primary {
-            background-color: hsl(202, 95%, 46%);
-            color: #ffffff;
-            transition: background 70ms;
-        }
-        .btn-primary:hover, .btn-primary:focus {
-            background-color: hsl(202, 95%, 51%);
-        }
-        .btn-primary:active {
-            background-color: hsl(202, 95%, 41%);
-        }
-        .validation-feedback {
-            margin-top: 1rem;
-            text-align: center;
-        }
-    }
-
-}
-
-@media screen and (max-width: 1080px) {
-    main .main-bottom {
-        @include flex(column, space-evenly, center);
-        background-color: $background-color-2;
-        
-        .color-white {
-            color: #fff;
-        }
-        .header-wrap {
-            padding: 2rem;
-            text-align: center;
-        }
-        .broschyr-wrap {
-            @include flex(column, center, center);
-        }
-        .broschyr {
-            @include size(70%, 50%);
-            padding: 1rem;
-        }
-        .product-wrap2 {
-            @include flex(row, center, center);
-        }
-        .logotype2 {
-            @include size(25%, 50%);
-            padding: 1rem;
-        }
+        @include contact-from;
     }
 }
-
-@media screen and (max-width: 780px) {
-    main .main-bottom {
-        @include flex(column, space-evenly, center);
-        background-color: $background-color-2;
-        
-        .color-white {
-            color: #fff;
-        }
-        .header-wrap {
-            padding: 1rem;
-            text-align: center;
-        }
-        .broschyr-wrap {
-            @include flex(column, center, center);
-        }
-        .broschyr {
-            @include size(60%, 50%);
-            padding: 1rem;
-        }
-        .product-wrap2 {
-            @include flex(row, center, center);
-        }
-        .logotype2 {
-            @include size(30%, 50%);
-            padding: 1rem;
-        }
-    }
-}  
 
 
 

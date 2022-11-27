@@ -1,25 +1,14 @@
 .white-block {
     @include size(100%, 6rem);
     background-color: $background-color-1;
-}
 
-@media screen and (max-width: 1080px) {
-    .white-block {
+    @media screen and (max-width: 1080px) {
         @include size(100%, 4rem);
-        background-color: $background-color-1;
-    } 
-}
-
-@media screen and (max-width: 780px) {
-    .white-block {
-        @include size(100%, 3rem);
-        background-color: $background-color-1;
     }
-}
-
-@media screen and (max-width: 540px) {
-    .white-block {
+    @media screen and (max-width: 780px) {
+        @include size(100%, 3rem);
+    }
+    @media screen and (max-width: 540px) {
         @include size(100%, 2rem);
-        background-color: $background-color-1;
     }
 }
