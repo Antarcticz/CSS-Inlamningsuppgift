@@ -5,9 +5,10 @@ main .main-bottom {
     .color-white {
         color: $text-color-white;
     }
-    .header-wrap {
+    .header-wrap-white {
         padding: 2rem;
         text-align: center;
+        color: $text-color-white;
 
         @media screen and (max-width: 780px) {
             padding: 1rem;
@@ -49,6 +50,25 @@ main .main-bottom {
             @include size(30%, 50%);
         }
     }
+    .product-wrap1 {
+        @include flex(row, space-between, center);
+
+        @media screen and (max-width: 1080px) {
+            @include flex(row, center, center);
+        }
+    }
+    .logotype1 {
+        @include size(70%, 30vh);
+        padding: 2rem;
+
+        @media screen and (max-width: 1080px) {
+            @include size(20%, 30%);
+            padding: 1rem;
+        }
+        @media screen and (max-width: 780px) {
+            @include size(25%, 30%);
+        }
+    }
     .conact-form-wrap {
         @include flex(column, center, center);
         @include size(40%, 50vh);
@@ -74,11 +94,11 @@ main .main-bottom {
     }
     .about-text {
         @include flex(column, space-between, center);
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
         // border: 1px solid yellow;
         color: $text-color-white;
     }
-    p {
+    p, h2 {
         font-size: 1rem;
 
         @include about-p-mq;

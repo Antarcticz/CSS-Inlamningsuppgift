@@ -103,47 +103,33 @@ main .main-mid {
   justify-content: space-evenly;
   align-items: center;
   background-color: #fff;
+  padding-bottom: 3rem;
 }
-main .main-mid .header-wrap {
+main .main-mid .header-wrap-black {
   padding: 2rem;
   text-align: center;
+  color: #000;
 }
 @media screen and (max-width: 780px) {
-  main .main-mid .header-wrap {
+  main .main-mid .header-wrap-black {
     padding: 1rem;
   }
 }
-main .main-mid .product-wrap1 {
+main .main-mid .service-text-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  height: 50vh;
+  border: solid 1px red;
+}
+main .main-mid .service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-@media screen and (max-width: 1080px) {
-  main .main-mid .product-wrap1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-main .main-mid .logotype1 {
-  width: 70%;
-  height: 30vh;
-  padding: 2rem;
-}
-@media screen and (max-width: 1080px) {
-  main .main-mid .logotype1 {
-    width: 20%;
-    height: 30%;
-    padding: 1rem;
-  }
-}
-@media screen and (max-width: 780px) {
-  main .main-mid .logotype1 {
-    width: 25%;
-    height: 30%;
-  }
+  border: solid 1px green;
 }
 
 main .main-top {
@@ -229,6 +215,30 @@ main .main-top .uknown-logo {
   }
 }
 
+.dark-block {
+  width: 100%;
+  height: 6rem;
+  background-color: #101010;
+}
+@media screen and (max-width: 1080px) {
+  .dark-block {
+    width: 100%;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .dark-block {
+    width: 100%;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .dark-block {
+    width: 100%;
+    height: 2rem;
+  }
+}
+
 main .main-bottom {
   display: flex;
   flex-direction: column;
@@ -239,12 +249,13 @@ main .main-bottom {
 main .main-bottom .color-white {
   color: #fff;
 }
-main .main-bottom .header-wrap {
+main .main-bottom .header-wrap-white {
   padding: 2rem;
   text-align: center;
+  color: #fff;
 }
 @media screen and (max-width: 780px) {
-  main .main-bottom .header-wrap {
+  main .main-bottom .header-wrap-white {
     padding: 1rem;
   }
 }
@@ -308,6 +319,38 @@ main .main-bottom .logotype2 {
   main .main-bottom .logotype2 {
     width: 30%;
     height: 50%;
+  }
+}
+main .main-bottom .product-wrap1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .product-wrap1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .main-bottom .logotype1 {
+  width: 70%;
+  height: 30vh;
+  padding: 2rem;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .logotype1 {
+    width: 20%;
+    height: 30%;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .logotype1 {
+    width: 25%;
+    height: 30%;
   }
 }
 main .main-bottom .conact-form-wrap {
@@ -567,24 +610,24 @@ main .main-bottom .about-text {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   color: #fff;
 }
-main .main-bottom p {
+main .main-bottom p, main .main-bottom h2 {
   font-size: 1rem;
 }
 @media screen and (max-width: 1630px) {
-  main .main-bottom p {
+  main .main-bottom p, main .main-bottom h2 {
     font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 780px) {
-  main .main-bottom p {
+  main .main-bottom p, main .main-bottom h2 {
     font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 540px) {
-  main .main-bottom p {
+  main .main-bottom p, main .main-bottom h2 {
     font-size: 0.4rem;
   }
 }

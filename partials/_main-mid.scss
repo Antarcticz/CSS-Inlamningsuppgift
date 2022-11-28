@@ -1,33 +1,25 @@
 main .main-mid {
     @include flex(column, space-evenly, center);
     background-color: $background-color-1;
+    padding-bottom: 3rem;
 
-    .header-wrap {
+    .header-wrap-black {
         padding: 2rem;
         text-align: center;
+        color: $text-color-black;
 
         @media screen and (max-width: 780px) {
             padding: 1rem;
         }
     }
-    .product-wrap1 {
-        @include flex(row, space-between, center);
-
-        @media screen and (max-width: 1080px) {
-            @include flex(row, center, center);
-        }
+    .service-text-wrap {
+        @include flex(row, space-between, flex-start);
+        @include size(80%, 50vh);
+        border: solid 1px red;
     }
-    .logotype1 {
-        @include size(70%, 30vh);
-        padding: 2rem;
-
-        @media screen and (max-width: 1080px) {
-            @include size(20%, 30%);
-            padding: 1rem;
-        }
-        @media screen and (max-width: 780px) {
-            @include size(25%, 30%);
-        }
+    .service-text {
+        @include flex(column, center, center);
+        border: solid 1px green;
     }
 }
 

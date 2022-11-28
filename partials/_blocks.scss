@@ -12,3 +12,17 @@
         @include size(100%, 2rem);
     }
 }
+.dark-block {
+    @include size(100%, 6rem);
+    background-color: $background-color-2;
+
+    @media screen and (max-width: 1080px) {
+        @include size(100%, 4rem);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(100%, 3rem);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(100%, 2rem);
+    }
+}
