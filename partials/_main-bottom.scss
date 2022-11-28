@@ -56,24 +56,90 @@ main .main-bottom {
     }
     .face-img-wrap {
         @include flex(row, space-between, center);
-        @include size(50%, 20vh);
+        @include size(96vh, 20vh);
+        // @include size(50%, 20vh);
         // border: 1px solid red;
+
+        @media screen and (max-width: 1080px) {
+            @include size(86vh, 15vh);
+        }
+        @media screen and (max-width: 900px) {
+            @include size(76vh, 15vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(66vh, 10vh);
+        }
+        @media screen and (max-width: 650px) {
+            @include size(56vh, 10vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(46vh, 8vh);
+        }
+        @media screen and (max-width: 450px) {
+            @include size(36vh, 8vh);
+        }
     }
     .face-img {
         @include flex(column, space-between, center);
         @include size(20vh, 20vh);
         // border: 1px solid green;
+
+        @media screen and (max-width: 1080px) {
+            @include size(15vh, 15vh);
+        }
+        @media screen and (max-width: 900px) {
+            @include size(15vh, 15vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(10vh, 10vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(8vh, 8vh);
+        }
     }
     .about-text-wrap {
         @include flex(row, space-between, center);
-        @include size(52%, 20vh);
+        @include size(100vh, 20vh);
+        // @include size(52%, 20vh);
         // border: 1px solid pink;
+
+        @media screen and (max-width: 1080px) {
+            @include size(92vh, 20vh);
+        }
+        @media screen and (max-width: 900px) {
+            @include size(82vh, 20vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(70vh, 15vh);
+        }
+        @media screen and (max-width: 650px) {
+            @include size(60vh, 15vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(49vh, 14vh);
+        }
+        @media screen and (max-width: 450px) {
+            @include size(39vh, 14vh);
+        }
     }
     .about-text {
         @include flex(column, space-between, center);
         padding-bottom: 5rem;
         // border: 1px solid yellow;
         color: $text-color-white;
+    }
+    p {
+        font-size: 1rem;
+
+        @media screen and (max-width: 1630px) {
+            font-size: 0.9rem;
+        }
+        @media screen and (max-width: 780px) {
+            font-size: 0.5rem;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 0.4rem;
+        }
     }
 }
 

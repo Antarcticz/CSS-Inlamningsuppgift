@@ -453,8 +453,44 @@ main .main-bottom .face-img-wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 96vh;
   height: 20vh;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .face-img-wrap {
+    width: 86vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-bottom .face-img-wrap {
+    width: 76vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .face-img-wrap {
+    width: 66vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .main-bottom .face-img-wrap {
+    width: 56vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .face-img-wrap {
+    width: 46vh;
+    height: 8vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-bottom .face-img-wrap {
+    width: 36vh;
+    height: 8vh;
+  }
 }
 main .main-bottom .face-img {
   display: flex;
@@ -464,13 +500,73 @@ main .main-bottom .face-img {
   width: 20vh;
   height: 20vh;
 }
+@media screen and (max-width: 1080px) {
+  main .main-bottom .face-img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-bottom .face-img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .face-img {
+    width: 10vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .face-img {
+    width: 8vh;
+    height: 8vh;
+  }
+}
 main .main-bottom .about-text-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 52%;
+  width: 100vh;
   height: 20vh;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .about-text-wrap {
+    width: 92vh;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-bottom .about-text-wrap {
+    width: 82vh;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .about-text-wrap {
+    width: 70vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .main-bottom .about-text-wrap {
+    width: 60vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .about-text-wrap {
+    width: 49vh;
+    height: 14vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-bottom .about-text-wrap {
+    width: 39vh;
+    height: 14vh;
+  }
 }
 main .main-bottom .about-text {
   display: flex;
@@ -479,6 +575,24 @@ main .main-bottom .about-text {
   align-items: center;
   padding-bottom: 5rem;
   color: #fff;
+}
+main .main-bottom p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1630px) {
+  main .main-bottom p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom p {
+    font-size: 0.4rem;
+  }
 }
 
 footer {
