@@ -470,13 +470,13 @@ main .main-bottom .face-img-wrap {
 }
 @media screen and (max-width: 780px) {
   main .main-bottom .face-img-wrap {
-    width: 66vh;
+    width: 60vh;
     height: 10vh;
   }
 }
 @media screen and (max-width: 650px) {
   main .main-bottom .face-img-wrap {
-    width: 56vh;
+    width: 50vh;
     height: 10vh;
   }
 }
@@ -506,12 +506,6 @@ main .main-bottom .face-img {
     height: 15vh;
   }
 }
-@media screen and (max-width: 900px) {
-  main .main-bottom .face-img {
-    width: 15vh;
-    height: 15vh;
-  }
-}
 @media screen and (max-width: 780px) {
   main .main-bottom .face-img {
     width: 10vh;
@@ -534,25 +528,25 @@ main .main-bottom .about-text-wrap {
 }
 @media screen and (max-width: 1080px) {
   main .main-bottom .about-text-wrap {
-    width: 92vh;
+    width: 95vh;
     height: 20vh;
   }
 }
 @media screen and (max-width: 900px) {
   main .main-bottom .about-text-wrap {
-    width: 82vh;
+    width: 85vh;
     height: 20vh;
   }
 }
 @media screen and (max-width: 780px) {
   main .main-bottom .about-text-wrap {
-    width: 70vh;
+    width: 63vh;
     height: 15vh;
   }
 }
 @media screen and (max-width: 650px) {
   main .main-bottom .about-text-wrap {
-    width: 60vh;
+    width: 53vh;
     height: 15vh;
   }
 }

@@ -156,3 +156,66 @@
     }
 }
 
+@mixin face-img-wrap-mq {
+    @media screen and (max-width: 1080px) {
+        @include size(86vh, 15vh);
+    }
+    @media screen and (max-width: 900px) {
+        @include size(76vh, 15vh);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(60vh, 10vh);
+    }
+    @media screen and (max-width: 650px) {
+        @include size(50vh, 10vh);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(46vh, 8vh);
+    }
+    @media screen and (max-width: 450px) {
+        @include size(36vh, 8vh);
+    }
+}
+@mixin face-img-mq {
+    @media screen and (max-width: 1080px) {
+        @include size(15vh, 15vh);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(10vh, 10vh);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(8vh, 8vh);
+    }
+}
+@mixin about-text-wrap-mq {
+    @media screen and (max-width: 1080px) {
+        @include size(95vh, 20vh);
+    }
+    @media screen and (max-width: 900px) {
+        @include size(85vh, 20vh);
+    }
+    @media screen and (max-width: 780px) {
+        @include size(63vh, 15vh);
+    }
+    @media screen and (max-width: 650px) {
+        @include size(53vh, 15vh);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(49vh, 14vh);
+    }
+    @media screen and (max-width: 450px) {
+        @include size(39vh, 14vh);
+    }
+}
+@mixin about-p-mq {
+    @media screen and (max-width: 1630px) {
+        font-size: 0.9rem;
+    }
+    @media screen and (max-width: 780px) {
+        font-size: 0.5rem;
+    }
+    @media screen and (max-width: 540px) {
+        font-size: 0.4rem;
+    }
+}
+
