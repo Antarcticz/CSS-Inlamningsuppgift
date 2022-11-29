@@ -4,6 +4,7 @@ main .main-top {
     background-image: url(images/matix2.png);
     background-repeat: round;
 
+    // background-image
     @media screen and (max-width: 1080px) {
         @include size(100%, 50vh);
     }

@@ -17,6 +17,14 @@ header .topnav {
     }
     .topnav-logo-h1-wrap {
         @include flex(row, center, center);
+
+        h1 {
+            text-shadow: $text-shadow-white1; // This one is here if the background color would be black
+        }
+        .color-white {
+            color: $text-color-white;
+            text-shadow: $text-shadow-black1;
+        }
     }
     .uknown-logo-small {
         @include size(3vh, 3vh);
@@ -30,13 +38,6 @@ header .topnav {
         @media screen and (max-width: 540px) {
             @include size(1.5vh, 1.5vh);
         }
-    }
-    h1 {
-        text-shadow: $text-shadow-white1;
-    }
-    .color-white {
-        color: $text-color-white;
-        text-shadow: $text-shadow-black1;
     }
 }
 

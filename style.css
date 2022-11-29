@@ -67,6 +67,13 @@ header .topnav .topnav-logo-h1-wrap {
   justify-content: center;
   align-items: center;
 }
+header .topnav .topnav-logo-h1-wrap h1 {
+  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+}
+header .topnav .topnav-logo-h1-wrap .color-white {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 header .topnav .uknown-logo-small {
   width: 3vh;
   height: 3vh;
@@ -89,13 +96,6 @@ header .topnav .uknown-logo-small {
     height: 1.5vh;
   }
 }
-header .topnav h1 {
-  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
-}
-header .topnav .color-white {
-  color: #fff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
 
 main .main-mid {
   display: flex;
@@ -105,13 +105,13 @@ main .main-mid {
   background-color: #fff;
   padding-bottom: 3rem;
 }
-main .main-mid .header-wrap-black {
+main .main-mid .header-black-wrap {
   padding: 2rem;
   text-align: center;
   color: #000;
 }
 @media screen and (max-width: 780px) {
-  main .main-mid .header-wrap-black {
+  main .main-mid .header-black-wrap {
     padding: 1rem;
   }
 }
@@ -120,16 +120,49 @@ main .main-mid .service-text-wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
-  height: 50vh;
-  border: solid 1px red;
+  width: 60%;
+  height: 13vh;
 }
-main .main-mid .service-text {
+main .main-mid .service-text-wrap .service-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px green;
+  text-align: center;
+}
+main .main-mid .btn-buy-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 5rem;
+}
+main .main-mid .btn-buy-wrap .btn-buy {
+  width: 20.75%;
+  padding: 0.8em 1.4em;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .btn-buy-wrap .btn-buy {
+    font-size: 0.5rem;
+  }
+}
+main .main-mid .btn-buy-wrap .btn-primary {
+  background-color: hsl(202deg, 95%, 46%);
+  color: #ffffff;
+  transition: background 70ms;
+}
+main .main-mid .btn-buy-wrap .btn-primary:hover, main .main-mid .btn-buy-wrap .btn-primary:focus {
+  background-color: hsl(202deg, 95%, 51%);
+}
+main .main-mid .btn-buy-wrap .btn-primary:active {
+  background-color: hsl(202deg, 95%, 41%);
 }
 
 main .main-top {
@@ -239,6 +272,30 @@ main .main-top .uknown-logo {
   }
 }
 
+.dark-block-2 {
+  width: 100%;
+  height: 2rem;
+  background-color: #101010;
+}
+@media screen and (max-width: 1080px) {
+  .dark-block-2 {
+    width: 100%;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .dark-block-2 {
+    width: 100%;
+    height: 1rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .dark-block-2 {
+    width: 100%;
+    height: 0.5rem;
+  }
+}
+
 main .main-bottom {
   display: flex;
   flex-direction: column;
@@ -249,13 +306,13 @@ main .main-bottom {
 main .main-bottom .color-white {
   color: #fff;
 }
-main .main-bottom .header-wrap-white {
+main .main-bottom .header-white-wrap {
   padding: 2rem;
   text-align: center;
   color: #fff;
 }
 @media screen and (max-width: 780px) {
-  main .main-bottom .header-wrap-white {
+  main .main-bottom .header-white-wrap {
     padding: 1rem;
   }
 }
@@ -273,84 +330,176 @@ main .main-bottom .broschyr-wrap {
     align-items: center;
   }
 }
-main .main-bottom .broschyr {
+main .main-bottom .broschyr-wrap .broschyr {
   width: 70%;
   height: 45vh;
   padding: 1rem;
 }
 @media screen and (max-width: 1080px) {
-  main .main-bottom .broschyr {
+  main .main-bottom .broschyr-wrap .broschyr {
     width: 70%;
     height: 50%;
   }
 }
 @media screen and (max-width: 780px) {
-  main .main-bottom .broschyr {
+  main .main-bottom .broschyr-wrap .broschyr {
     width: 60%;
     height: 50%;
   }
 }
-main .main-bottom .product-wrap2 {
+main .main-bottom .product-wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1080px) {
-  main .main-bottom .product-wrap2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-main .main-bottom .logotype2 {
+main .main-bottom .product-wrap .product {
   width: 70%;
   height: 30vh;
   padding: 1rem;
 }
 @media screen and (max-width: 1080px) {
-  main .main-bottom .logotype2 {
-    width: 25%;
-    height: 50%;
+  main .main-bottom .product-wrap .product {
+    width: 20%;
+    height: 30%;
   }
 }
-@media screen and (max-width: 780px) {
-  main .main-bottom .logotype2 {
-    width: 30%;
-    height: 50%;
-  }
-}
-main .main-bottom .product-wrap1 {
+main .main-bottom .face-img-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 96vh;
+  height: 20vh;
 }
 @media screen and (max-width: 1080px) {
-  main .main-bottom .product-wrap1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  main .main-bottom .face-img-wrap {
+    width: 86vh;
+    height: 15vh;
   }
 }
-main .main-bottom .logotype1 {
-  width: 70%;
-  height: 30vh;
-  padding: 2rem;
-}
-@media screen and (max-width: 1080px) {
-  main .main-bottom .logotype1 {
-    width: 20%;
-    height: 30%;
-    padding: 1rem;
+@media screen and (max-width: 900px) {
+  main .main-bottom .face-img-wrap {
+    width: 76vh;
+    height: 15vh;
   }
 }
 @media screen and (max-width: 780px) {
-  main .main-bottom .logotype1 {
-    width: 25%;
-    height: 30%;
+  main .main-bottom .face-img-wrap {
+    width: 60vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .main-bottom .face-img-wrap {
+    width: 50vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .face-img-wrap {
+    width: 46vh;
+    height: 8vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-bottom .face-img-wrap {
+    width: 36vh;
+    height: 8vh;
+  }
+}
+main .main-bottom .face-img-wrap .face-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vh;
+  height: 20vh;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .face-img-wrap .face-img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .face-img-wrap .face-img {
+    width: 10vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .face-img-wrap .face-img {
+    width: 8vh;
+    height: 8vh;
+  }
+}
+main .main-bottom .about-text-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 103vh;
+  height: 20vh;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .about-text-wrap {
+    width: 95vh;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-bottom .about-text-wrap {
+    width: 85vh;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .about-text-wrap {
+    width: 62vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .main-bottom .about-text-wrap {
+    width: 52vh;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-bottom .about-text-wrap {
+    width: 47vh;
+    height: 14vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-bottom .about-text-wrap {
+    width: 37vh;
+    height: 14vh;
+  }
+}
+main .main-bottom .about-text-wrap .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  color: #fff;
+}
+main .main-bottom .references-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .main-bottom .references-wrap .references {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .references-wrap .references {
+    width: 70%;
+    height: 70%;
   }
 }
 main .main-bottom .conact-form-wrap {
@@ -463,7 +612,8 @@ main .main-bottom .conact-form-wrap .form-control2 {
     height: 5vh;
   }
 }
-main .main-bottom .conact-form-wrap .btn {
+main .main-bottom .conact-form-wrap .btn-submit {
+  width: 100%;
   padding: 0.8em 1.4em;
   border-radius: 0.5rem;
   border: 0;
@@ -473,12 +623,9 @@ main .main-bottom .conact-form-wrap .btn {
   cursor: pointer;
 }
 @media screen and (max-width: 540px) {
-  main .main-bottom .conact-form-wrap .btn {
+  main .main-bottom .conact-form-wrap .btn-submit {
     font-size: 0.5rem;
   }
-}
-main .main-bottom .conact-form-wrap .btn-block {
-  width: 100%;
 }
 main .main-bottom .conact-form-wrap .btn-primary {
   background-color: hsl(202deg, 95%, 46%);
@@ -490,146 +637,6 @@ main .main-bottom .conact-form-wrap .btn-primary:hover, main .main-bottom .conac
 }
 main .main-bottom .conact-form-wrap .btn-primary:active {
   background-color: hsl(202deg, 95%, 41%);
-}
-main .main-bottom .face-img-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 96vh;
-  height: 20vh;
-}
-@media screen and (max-width: 1080px) {
-  main .main-bottom .face-img-wrap {
-    width: 86vh;
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 900px) {
-  main .main-bottom .face-img-wrap {
-    width: 76vh;
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 780px) {
-  main .main-bottom .face-img-wrap {
-    width: 60vh;
-    height: 10vh;
-  }
-}
-@media screen and (max-width: 650px) {
-  main .main-bottom .face-img-wrap {
-    width: 50vh;
-    height: 10vh;
-  }
-}
-@media screen and (max-width: 540px) {
-  main .main-bottom .face-img-wrap {
-    width: 46vh;
-    height: 8vh;
-  }
-}
-@media screen and (max-width: 450px) {
-  main .main-bottom .face-img-wrap {
-    width: 36vh;
-    height: 8vh;
-  }
-}
-main .main-bottom .face-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 20vh;
-  height: 20vh;
-}
-@media screen and (max-width: 1080px) {
-  main .main-bottom .face-img {
-    width: 15vh;
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 780px) {
-  main .main-bottom .face-img {
-    width: 10vh;
-    height: 10vh;
-  }
-}
-@media screen and (max-width: 540px) {
-  main .main-bottom .face-img {
-    width: 8vh;
-    height: 8vh;
-  }
-}
-main .main-bottom .about-text-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vh;
-  height: 20vh;
-}
-@media screen and (max-width: 1080px) {
-  main .main-bottom .about-text-wrap {
-    width: 95vh;
-    height: 20vh;
-  }
-}
-@media screen and (max-width: 900px) {
-  main .main-bottom .about-text-wrap {
-    width: 85vh;
-    height: 20vh;
-  }
-}
-@media screen and (max-width: 780px) {
-  main .main-bottom .about-text-wrap {
-    width: 63vh;
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 650px) {
-  main .main-bottom .about-text-wrap {
-    width: 53vh;
-    height: 15vh;
-  }
-}
-@media screen and (max-width: 540px) {
-  main .main-bottom .about-text-wrap {
-    width: 49vh;
-    height: 14vh;
-  }
-}
-@media screen and (max-width: 450px) {
-  main .main-bottom .about-text-wrap {
-    width: 39vh;
-    height: 14vh;
-  }
-}
-main .main-bottom .about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 4rem;
-  color: #fff;
-}
-main .main-bottom p, main .main-bottom h2 {
-  font-size: 1rem;
-}
-@media screen and (max-width: 1630px) {
-  main .main-bottom p, main .main-bottom h2 {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 780px) {
-  main .main-bottom p, main .main-bottom h2 {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (max-width: 540px) {
-  main .main-bottom p, main .main-bottom h2 {
-    font-size: 0.4rem;
-  }
 }
 
 footer {
@@ -666,6 +673,9 @@ footer {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+* h2 {
+  padding-top: 2rem;
+}
 @media screen and (max-width: 1080px) {
   * h1, * span, * a {
     font-size: 1rem;
@@ -683,6 +693,7 @@ footer {
   }
   * h2 {
     font-size: 0.5rem;
+    padding-top: 1rem;
   }
   * p {
     font-size: 0.4rem;
@@ -694,6 +705,7 @@ footer {
   }
   * h2 {
     font-size: 0.4rem;
+    padding-top: 0.5rem;
   }
   * p {
     font-size: 0.3rem;

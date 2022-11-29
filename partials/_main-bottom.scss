@@ -5,7 +5,7 @@ main .main-bottom {
     .color-white {
         color: $text-color-white;
     }
-    .header-wrap-white {
+    .header-white-wrap {
         padding: 2rem;
         text-align: center;
         color: $text-color-white;
@@ -20,88 +20,70 @@ main .main-bottom {
         @media screen and (max-width: 1080px) {
             @include flex(column, center, center);
         }
-    }
-    .broschyr {
-        @include size(70%, 45vh);
-        padding: 1rem;
 
-        @media screen and (max-width: 1080px) {
-            @include size(70%, 50%);
-        }
-        @media screen and (max-width: 780px) {
-            @include size(60%, 50%);
-        }
-    }
-    .product-wrap2 {
-        @include flex(row, space-evenly, center);
-
-        @media screen and (max-width: 1080px) {
-            @include flex(row, center, center);
-        }
-    }
-    .logotype2 {
-        @include size(70%, 30vh);
-        padding: 1rem;
-
-        @media screen and (max-width: 1080px) {
-            @include size(25%, 50%);
-        }
-        @media screen and (max-width: 780px) {
-            @include size(30%, 50%);
-        }
-    }
-    .product-wrap1 {
-        @include flex(row, space-between, center);
-
-        @media screen and (max-width: 1080px) {
-            @include flex(row, center, center);
-        }
-    }
-    .logotype1 {
-        @include size(70%, 30vh);
-        padding: 2rem;
-
-        @media screen and (max-width: 1080px) {
-            @include size(20%, 30%);
+        .broschyr {
+            @include size(70%, 45vh);
             padding: 1rem;
-        }
-        @media screen and (max-width: 780px) {
-            @include size(25%, 30%);
+    
+            @media screen and (max-width: 1080px) {
+                @include size(70%, 50%);
+            }
+            @media screen and (max-width: 780px) {
+                @include size(60%, 50%);
+            }
         }
     }
-    .conact-form-wrap {
-        @include flex(column, center, center);
-        @include size(40%, 50vh);
-        @include contact-from;
+    .product-wrap {
+        @include flex(row, center, center);
+
+        .product {
+            @include size(70%, 30vh);
+            padding: 1rem;
+    
+            @media screen and (max-width: 1080px) {
+                @include size(20%, 30%);
+            }
+        }
     }
     .face-img-wrap {
         @include flex(row, space-between, center);
         @include size(96vh, 20vh);
         @include face-img-wrap-mq;
         // border: 1px solid red;
-    }
-    .face-img {
-        @include flex(column, space-between, center);
-        @include size(20vh, 20vh);
-        @include face-img-mq;
-        // border: 1px solid green;
+        .face-img {
+            @include flex(column, space-between, center);
+            @include size(20vh, 20vh);
+            @include face-img-mq;
+            // border: 1px solid green;
+        }
     }
     .about-text-wrap {
         @include flex(row, space-between, center);
-        @include size(100vh, 20vh);
+        @include size(103vh, 20vh);
         @include about-text-wrap-mq;
         // border: 1px solid pink;
+        .about-text {
+            @include flex(column, space-between, center);
+            padding-bottom: 4rem;
+            // border: 1px solid yellow;
+            color: $text-color-white;
+        }
     }
-    .about-text {
-        @include flex(column, space-between, center);
-        padding-bottom: 4rem;
-        // border: 1px solid yellow;
-        color: $text-color-white;
-    }
-    p, h2 {
-        font-size: 1rem;
+    .references-wrap {
+        @include flex(row, center, center);
 
-        @include about-p-mq;
+        .references {
+            @include size(100%, 100%);
+    
+            @media screen and (max-width: 780px) {
+                @include size(70%, 70%);
+            }
+        }
+    }
+    .conact-form-wrap {
+        @include flex(column, center, center);
+        @include size(40%, 50vh);
+        @include contact-from;
     }
 }
 

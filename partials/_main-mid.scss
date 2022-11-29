@@ -3,7 +3,7 @@ main .main-mid {
     background-color: $background-color-1;
     padding-bottom: 3rem;
 
-    .header-wrap-black {
+    .header-black-wrap {
         padding: 2rem;
         text-align: center;
         color: $text-color-black;
@@ -14,12 +14,43 @@ main .main-mid {
     }
     .service-text-wrap {
         @include flex(row, space-between, flex-start);
-        @include size(80%, 50vh);
-        border: solid 1px red;
+        @include size(60%, 13vh);
+        // border: solid 1px red;
+        .service-text {
+            @include flex(column, center, center);
+            text-align: center;
+            // border: solid 1px green;
+        }
     }
-    .service-text {
-        @include flex(column, center, center);
-        border: solid 1px green;
+    .btn-buy-wrap {
+        @include flex(row, space-between, center);
+        @include size(60%, 5rem);
+        // border: 1px solid orange;
+        .btn-buy {
+            width: 20.75%;
+            padding: 0.8em 1.4em;
+            border-radius: 0.5rem;
+            border: 0;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+    
+            @media screen and (max-width: 540px) {
+                font-size: 0.5rem;
+            }
+        }
+        .btn-primary {
+            background-color: hsl(202, 95%, 46%);
+            color: #ffffff;
+            transition: background 70ms;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: hsl(202, 95%, 51%);
+        }
+        .btn-primary:active {
+            background-color: hsl(202, 95%, 41%);
+        }
     }
 }
 
