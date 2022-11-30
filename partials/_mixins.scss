@@ -154,6 +154,67 @@
     }
 }
 
+@mixin service-text-wrap-mq {
+    @media screen and (max-width: 1200px) {
+        width: 103vh;
+    }
+    @media screen and (max-width: 1080px) {
+        @include size(93vh, 10vh);
+    }
+    @media screen and (max-width: 900px) {
+        width: 83vh;
+    }
+    @media screen and (max-width: 780px) {
+        @include size(53vh, 5vh);
+    }
+    @media screen and (max-width: 540px) {
+        @include size(43vh, 4vh);
+    }
+    @media screen and (max-width: 400px) {
+        width: 33vh;
+    }
+}
+@mixin btn-buy-wrap-mq {
+    @media screen and (max-width: 1200px) {
+        width: 103vh;
+    }
+    @media screen and (max-width: 1080px) {
+        width: 93vh;
+    }
+    @media screen and (max-width: 900px) {
+        width: 83vh;
+    }
+    @media screen and (max-width: 780px) {
+        width: 53vh;
+    }
+    @media screen and (max-width: 540px) {
+        width: 43vh;
+    }
+    @media screen and (max-width: 400px) {
+        width: 33vh;
+    }
+}
+@mixin btn-buy-mq {
+    @media screen and (max-width: 1630px) {
+        height: 2rem
+    }
+    @media screen and (max-width: 1080px) {
+        @include size(12.2rem, 1.5rem);
+        font-size: 0.7rem;
+        border-radius: 0.4rem;
+    }
+    @media screen and (max-width: 780px) {
+        @include size(6.2rem, 1rem);
+        font-size: 0.5rem;
+        border-radius: 0.3rem;
+    }
+    @media screen and (max-width: 540px) {
+        @include size(4.7rem, 0.5rem);
+        font-size: 0.3rem;
+        border-radius: 0.15rem;
+    }
+}
+
 @mixin face-img-wrap-mq {
     @media screen and (max-width: 1080px) {
         @include size(86vh, 15vh);

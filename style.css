@@ -105,6 +105,16 @@ main .main-mid {
   background-color: #fff;
   padding-bottom: 3rem;
 }
+@media screen and (max-width: 780px) {
+  main .main-mid {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid {
+    padding-bottom: 1rem;
+  }
+}
 main .main-mid .header-black-wrap {
   padding: 2rem;
   text-align: center;
@@ -120,8 +130,41 @@ main .main-mid .service-text-wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 60%;
+  width: 123vh;
   height: 13vh;
+}
+@media screen and (max-width: 1200px) {
+  main .main-mid .service-text-wrap {
+    width: 103vh;
+  }
+}
+@media screen and (max-width: 1080px) {
+  main .main-mid .service-text-wrap {
+    width: 93vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-mid .service-text-wrap {
+    width: 83vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .service-text-wrap {
+    width: 53vh;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .service-text-wrap {
+    width: 43vh;
+    height: 4vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .main-mid .service-text-wrap {
+    width: 33vh;
+  }
 }
 main .main-mid .service-text-wrap .service-text {
   display: flex;
@@ -135,12 +178,41 @@ main .main-mid .btn-buy-wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  height: 5rem;
+  width: 123vh;
+}
+@media screen and (max-width: 1200px) {
+  main .main-mid .btn-buy-wrap {
+    width: 103vh;
+  }
+}
+@media screen and (max-width: 1080px) {
+  main .main-mid .btn-buy-wrap {
+    width: 93vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .main-mid .btn-buy-wrap {
+    width: 83vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .btn-buy-wrap {
+    width: 53vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .btn-buy-wrap {
+    width: 43vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .main-mid .btn-buy-wrap {
+    width: 33vh;
+  }
 }
 main .main-mid .btn-buy-wrap .btn-buy {
-  width: 20.75%;
-  padding: 0.8em 1.4em;
+  width: 15.2rem;
+  height: 2.3rem;
   border-radius: 0.5rem;
   border: 0;
   outline: none;
@@ -148,14 +220,38 @@ main .main-mid .btn-buy-wrap .btn-buy {
   font-weight: 600;
   cursor: pointer;
 }
+@media screen and (max-width: 1630px) {
+  main .main-mid .btn-buy-wrap .btn-buy {
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  main .main-mid .btn-buy-wrap .btn-buy {
+    width: 12.2rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.4rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .btn-buy-wrap .btn-buy {
+    width: 6.2rem;
+    height: 1rem;
+    font-size: 0.5rem;
+    border-radius: 0.3rem;
+  }
+}
 @media screen and (max-width: 540px) {
   main .main-mid .btn-buy-wrap .btn-buy {
-    font-size: 0.5rem;
+    width: 4.7rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    border-radius: 0.15rem;
   }
 }
 main .main-mid .btn-buy-wrap .btn-primary {
   background-color: hsl(202deg, 95%, 46%);
-  color: #ffffff;
+  color: #fff;
   transition: background 70ms;
 }
 main .main-mid .btn-buy-wrap .btn-primary:hover, main .main-mid .btn-buy-wrap .btn-primary:focus {
@@ -307,13 +403,36 @@ main .main-bottom .color-white {
   color: #fff;
 }
 main .main-bottom .header-white-wrap {
-  padding: 2rem;
   text-align: center;
   color: #fff;
 }
+main .main-bottom .header-white-wrap h1 {
+  padding-top: 2rem;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .header-white-wrap h1 {
+    padding-top: 1rem;
+  }
+}
 @media screen and (max-width: 780px) {
-  main .main-bottom .header-white-wrap {
-    padding: 1rem;
+  main .main-bottom .header-white-wrap h1 {
+    padding-top: 0.5rem;
+  }
+}
+main .main-bottom .header-white-wrap h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 1080px) {
+  main .main-bottom .header-white-wrap h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-bottom .header-white-wrap h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
   }
 }
 main .main-bottom .broschyr-wrap {
@@ -673,9 +792,6 @@ footer {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-* h2 {
-  padding-top: 2rem;
-}
 @media screen and (max-width: 1080px) {
   * h1, * span, * a {
     font-size: 1rem;
@@ -693,7 +809,6 @@ footer {
   }
   * h2 {
     font-size: 0.5rem;
-    padding-top: 1rem;
   }
   * p {
     font-size: 0.4rem;
@@ -705,7 +820,6 @@ footer {
   }
   * h2 {
     font-size: 0.4rem;
-    padding-top: 0.5rem;
   }
   * p {
     font-size: 0.3rem;

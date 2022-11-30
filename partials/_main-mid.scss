@@ -3,46 +3,51 @@ main .main-mid {
     background-color: $background-color-1;
     padding-bottom: 3rem;
 
+    @media screen and (max-width: 780px) {
+        padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 540px) {
+        padding-bottom: 1rem;
+    }
+    
     .header-black-wrap {
         padding: 2rem;
         text-align: center;
         color: $text-color-black;
-
+        
         @media screen and (max-width: 780px) {
             padding: 1rem;
         }
     }
     .service-text-wrap {
         @include flex(row, space-between, flex-start);
-        @include size(60%, 13vh);
-        // border: solid 1px red;
+        @include size(123vh, 13vh);
+        @include service-text-wrap-mq;
+
+       
         .service-text {
             @include flex(column, center, center);
             text-align: center;
-            // border: solid 1px green;
         }
     }
     .btn-buy-wrap {
         @include flex(row, space-between, center);
-        @include size(60%, 5rem);
-        // border: 1px solid orange;
+        @include btn-buy-wrap-mq;
+        width: 123vh;
+        
         .btn-buy {
-            width: 20.75%;
-            padding: 0.8em 1.4em;
+            @include size(15.2rem, 2.3rem);
+            @include btn-buy-mq;
             border-radius: 0.5rem;
             border: 0;
             outline: none;
             text-transform: uppercase;
             font-weight: 600;
             cursor: pointer;
-    
-            @media screen and (max-width: 540px) {
-                font-size: 0.5rem;
-            }
         }
         .btn-primary {
             background-color: hsl(202, 95%, 46%);
-            color: #ffffff;
+            color: $text-color-white;
             transition: background 70ms;
         }
         .btn-primary:hover, .btn-primary:focus {

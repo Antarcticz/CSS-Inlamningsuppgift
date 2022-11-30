@@ -6,13 +6,33 @@ main .main-bottom {
         color: $text-color-white;
     }
     .header-white-wrap {
-        padding: 2rem;
         text-align: center;
         color: $text-color-white;
 
-        @media screen and (max-width: 780px) {
-            padding: 1rem;
+        h1 {
+            padding-top: 2rem;
+
+            @media screen and (max-width: 1080px) {
+                padding-top: 1rem;
+            }
+            @media screen and (max-width: 780px) {
+                padding-top: 0.5rem;
+            }
         }
+        h2 {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+
+            @media screen and (max-width: 1080px) {
+                padding-top: 1rem;
+                padding-bottom: 0.5rem;
+            }
+            @media screen and (max-width: 780px) {
+                padding-top: 0.5rem;
+                padding-bottom: 0.25rem;
+            }
+        }
+        
     }
     .broschyr-wrap {
         @include flex(row, center, center);
