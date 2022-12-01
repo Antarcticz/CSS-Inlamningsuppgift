@@ -2,6 +2,7 @@ main .main-mid {
     @include flex(column, space-evenly, center);
     background-color: $background-color-1;
     padding-bottom: 3rem;
+    
 
     @media screen and (max-width: 780px) {
         padding-bottom: 2rem;
@@ -15,6 +16,11 @@ main .main-mid {
         text-align: center;
         color: $text-color-black;
         
+        .color-white {
+            color: $text-color-white;
+            text-shadow: $text-shadow-black1;
+        }
+
         @media screen and (max-width: 780px) {
             padding: 1rem;
         }
@@ -56,6 +62,17 @@ main .main-mid {
         .btn-primary:active {
             background-color: hsl(202, 95%, 41%);
         }
+    }
+
+    .about-company-text-wrap {
+        @include flex(column, flex-start, center);
+        @include size(80vh, 15vh);
+        border: 1px solid red;
+    }
+    .about-company-text {
+        text-align: center;
+        margin-bottom: 1rem;
+        border: 1px solid green;
     }
 }
 
