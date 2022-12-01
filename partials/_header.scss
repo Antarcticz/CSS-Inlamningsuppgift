@@ -17,9 +17,9 @@ header .topnav {
     }
     .topnav-logo-h1-wrap {
         @include flex(row, center, center);
-
+        // This one is here if the background color would be black
         h1 {
-            text-shadow: $text-shadow-white1; // This one is here if the background color would be black
+            text-shadow: $text-shadow-white1;
         }
         .color-white {
             color: $text-color-white;

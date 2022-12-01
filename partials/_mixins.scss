@@ -9,7 +9,7 @@
     justify-content: $justify;
     align-items: $align;
 }
-
+//-------------------------------------HEADER TOPNAV--------------------------------------
 @mixin topnav ($hover-color, $active-color) {
     .topnav-a {
         @include flex(row, space-between, center);
@@ -39,7 +39,7 @@
         color: $hover-color;
     }
 }
-
+//-------------------------------------CONTACT--------------------------------------------
 @mixin contact-from {
     background-color: #fff;
     padding: 1rem;
@@ -103,7 +103,7 @@
             font-size: 0.5rem;
         }
     }
-    .terms-text {
+    .radio-text, .terms-text {
         padding-left: 0.25rem;
     }
     .input-label {
@@ -153,7 +153,7 @@
         background-color: hsl(202, 95%, 41%);
     }
 }
-
+//-------------------------------------PRODUCT MQ-----------------------------------------
 @mixin service-text-wrap-mq {
     @media screen and (max-width: 1200px) {
         width: 103vh;
@@ -199,25 +199,30 @@
         height: 2rem
     }
     @media screen and (max-width: 1080px) {
-        @include size(12.2rem, 1.5rem);
+        @include size(10.8rem, 1.5rem);
         font-size: 0.7rem;
         border-radius: 0.4rem;
     }
     @media screen and (max-width: 780px) {
-        @include size(6.2rem, 1rem);
+        @include size(5.4rem, 1rem);
         font-size: 0.5rem;
         border-radius: 0.3rem;
     }
     @media screen and (max-width: 540px) {
-        @include size(4.7rem, 0.5rem);
+        @include size(4.1rem, 0.5rem);
         font-size: 0.3rem;
         border-radius: 0.15rem;
     }
 }
-
+//-------------------------------------ABOUT MQ-------------------------------------------
 @mixin face-img-wrap-mq {
+    @media screen and (max-width: 1630px) {
+        @include size(96vh, 20vh);
+        padding-bottom: 2rem;
+    }
     @media screen and (max-width: 1080px) {
         @include size(86vh, 15vh);
+        padding-bottom: 0.5rem;
     }
     @media screen and (max-width: 900px) {
         @include size(76vh, 15vh);
@@ -230,6 +235,7 @@
     }
     @media screen and (max-width: 540px) {
         @include size(46vh, 8vh);
+        padding-bottom: 0.25rem;
     }
     @media screen and (max-width: 450px) {
         @include size(36vh, 8vh);
@@ -247,23 +253,26 @@
     }
 }
 @mixin about-text-wrap-mq {
+    @media screen and (max-width: 1630px) {
+        @include size(103vh, 20vh);
+    }
     @media screen and (max-width: 1080px) {
-        @include size(95vh, 20vh);
+        @include size(93vh, 20vh);
     }
     @media screen and (max-width: 900px) {
-        @include size(85vh, 20vh);
+        @include size(83vh, 20vh);
     }
     @media screen and (max-width: 780px) {
-        @include size(62vh, 15vh);
+        @include size(61vh, 15vh);
     }
     @media screen and (max-width: 650px) {
-        @include size(52vh, 15vh);
+        @include size(51vh, 15vh);
     }
     @media screen and (max-width: 540px) {
-        @include size(47vh, 14vh);
+        @include size(46vh, 14vh);
     }
     @media screen and (max-width: 450px) {
-        @include size(37vh, 14vh);
+        @include size(36vh, 14vh);
     }
 }
 

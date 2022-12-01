@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/UNKNOWN Computing Logotype HD Blue.png">
+    <link rel="icon" type="image/png" href="images/UNKNOWN-Computing-Logotype-HD-Blue.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>UNKNOWN Computing - Contact</title>
 </head>
 <body>
-    <!-- ----------------------------------------------HEADER TOPNAV------------------------------------------ -->
     <header>
         <nav class="topnav">
             <div class="topnav-logo-h1-wrap">
                 <div>
-                    <img class="uknown-logo-small" src="images/UNKNOWN Computing Logotype HD Blue  smaller white space.png" alt="unknown computing blue logotype">
+                    <img class="uknown-logo-small" src="images/UNKNOWN-Computing-Logotype-HD-Blue.png" alt="unknown computing hd blue logotype">
                 </div>
                 <div class="topnav-h1">
                     <h1><span class="color-white"> UNKNOWN </span>Computing</h1>
@@ -34,49 +33,72 @@
         <div class="white-block"></div>
     </header>
     <main>
-        <!-- --------------------------------------------MAIN TOP--------------------------------------------- -->
-        <div class="main-top">
-            <h1><span class="color-white">UNKNOWN </span>Computing </br>Contact Us</h1>
-            <img class="uknown-logo" src="images/UNKNOWN Computing Logotype HD Blue  smaller white space.png" alt="unknown computing blue logotype">
-        </div>
-        <!-- -------------------------------------------MAIN MID---------------------------------------------- -->
-        <div class="white-block"></div>
-        <!-- ------------------------------------------MAIN BOTTOM-------------------------------------------- -->
-        <div class="main-bottom">
+        <section class="main-top">
+            <h1><span class="color-white">UNKNOWN </span>Computing <br>Contact Us</h1>
+            <img class="uknown-logo" src="images/UNKNOWN-Computing-Logotype-HD-Blue.png" alt="unknown computing hd blue logotype">
+        </section>
+        <section class="main-mid">
+            <div class="header-black-wrap">
+                <h1><span class="color-white">UNKNOWN </span>Computing</h1>
+            </div>
+            <div class="contact-text-wrap">
+                <div class="contact-text">
+                    <h3>Address</h3>
+                    <p>unknown</p>
+                </div>
+                <div class="contact-text">
+                    <h3>Phone nr</h3>
+                    <p>+00 00-00-00-000</p>
+                </div>
+            </div>
+        </section>
+        <section class="main-bottom">
             <div class="dark-block"></div>
             <div class="conact-form-wrap">
                 <form class="form-content">
                     <div class="input-group-wrap">
                         <div class="input-group">
                             <label for="firstName" class="input-label">First Name</label>
-                            <input type="text" placeholder="Firstname..." class="form-control">
+                            <input type="text" placeholder="Firstname..." id="firstName" class="form-control">
                         </div>
                       
                         <div class="input-group">
                             <label for="lastName" class="input-label">Last Name</label>
-                            <input type="text" placeholder="Lastname..." class="form-control">
+                            <input type="text" placeholder="Lastname..." id="lastName" class="form-control">
                         </div>
                     </div>
                     <div class="input-group-wrap">
                         <div class="input-group">
                             <label for="email" class="input-label">E-mail</label>
-                            <input type="email" placeholder="name@hotmail.com" class="form-control">
+                            <input type="email" placeholder="name@hotmail.com" id="email" class="form-control">
                         </div>
                       
                         <div class="input-group">
-                            <label for="password" class="input-label">Phone</label>
-                            <input type="number" placeholder="+00 00-00-00-000" class="form-control">
+                            <label for="phoneNumber" class="input-label">Phone</label>
+                            <input type="number" placeholder="+00 00-00-00-000" id="phoneNumber" class="form-control">
                         </div>
                     </div>  
                       
                     <div class="input-group2">
                         <label for="message" class="input-label">What is your message?</label>
-                        <textarea type="text" placeholder="Write message..." class="form-control2"></textarea>
+                        <textarea placeholder="Write message..." id="message" class="form-control2"></textarea>
                     </div>
                     
                     <div class="input-group3">
+                        <input type="radio">
+                        <label class="radio-text">Purchase of product/service</label>
+                    </div>
+                    <div class="input-group3">
+                        <input type="radio">
+                        <label class="radio-text">Questions about the company</label>
+                    </div>
+                    <div class="input-group3">
+                        <input type="radio">
+                        <label class="radio-text">Feedback about the website</label>
+                    </div>
+                    <div class="input-group3">
                         <input type="checkbox">
-                        <label class="terms-text" for="terms">Accept terms and conditions</label>
+                        <label class="terms-text">Accept terms and conditions</label>
                     </div>
                     
                     <div>
@@ -85,10 +107,9 @@
                 </form>
             </div>
             <div class="dark-block"></div>
-        </div>
+        </section>
     </main>
-    <!-- ------------------------------------------------FOOTER----------------------------------------------- -->
-    <footer>    <!--!footer is not stuck to the bottom-->
+    <footer>
         <p>UNKNOWN Computing &copy; 2022 - 2024</p>
     </footer>
     

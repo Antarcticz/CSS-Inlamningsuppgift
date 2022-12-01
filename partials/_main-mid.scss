@@ -2,7 +2,6 @@ main .main-mid {
     @include flex(column, space-evenly, center);
     background-color: $background-color-1;
     padding-bottom: 3rem;
-    
 
     @media screen and (max-width: 780px) {
         padding-bottom: 2rem;
@@ -10,7 +9,7 @@ main .main-mid {
     @media screen and (max-width: 540px) {
         padding-bottom: 1rem;
     }
-    
+    // ---------------------------------------------------HEADER BLACK------------------------------------------------
     .header-black-wrap {
         padding: 2rem;
         text-align: center;
@@ -25,12 +24,11 @@ main .main-mid {
             padding: 1rem;
         }
     }
+    // ----------------------------------------------------PRODUCT----------------------------------------------------
     .service-text-wrap {
         @include flex(row, space-between, flex-start);
         @include size(123vh, 13vh);
         @include service-text-wrap-mq;
-
-       
         .service-text {
             @include flex(column, center, center);
             text-align: center;
@@ -40,9 +38,8 @@ main .main-mid {
         @include flex(row, space-between, center);
         @include btn-buy-wrap-mq;
         width: 123vh;
-        
         .btn-buy {
-            @include size(15.2rem, 2.3rem);
+            @include size(13.5rem, 2.3rem);
             @include btn-buy-mq;
             border-radius: 0.5rem;
             border: 0;
@@ -63,16 +60,52 @@ main .main-mid {
             background-color: hsl(202, 95%, 41%);
         }
     }
-
+    // ----------------------------------------------------ABOUT------------------------------------------------------
     .about-company-text-wrap {
-        @include flex(column, flex-start, center);
+        @include flex(column, space-between, center);
         @include size(80vh, 15vh);
-        border: 1px solid red;
+        
+        @media screen and (max-width: 1080px) {
+            @include size(60vh, 12vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include size(40vh, 8vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(30vh, 6vh);
+        }
+
+        .about-company-text {
+            text-align: center;
+        }
     }
-    .about-company-text {
-        text-align: center;
-        margin-bottom: 1rem;
-        border: 1px solid green;
+    // ---------------------------------------------------CONTACT-----------------------------------------------------
+    .contact-text-wrap {
+        @include flex(column, space-betweence, center);
+        @include size(80vh, 12vh);
+
+        @media screen and (max-width: 1080px) {
+            @include size(60vh, 10vh);
+        }
+        @media screen and (max-width: 780px) {
+            @include flex(column, center, center);
+            @include size(40vh, 8vh);
+        }
+        @media screen and (max-width: 540px) {
+            @include size(20vh, 6vh);
+        }
+
+        .contact-text {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 780px) {
+                margin-bottom: 0.5rem;
+            }
+            @media screen and (max-width: 540px) {
+                margin-bottom: 0.25rem;
+            }
+        }
     }
 }
 

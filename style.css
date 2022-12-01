@@ -215,7 +215,7 @@ main .main-mid .btn-buy-wrap {
   }
 }
 main .main-mid .btn-buy-wrap .btn-buy {
-  width: 15.2rem;
+  width: 13.5rem;
   height: 2.3rem;
   border-radius: 0.5rem;
   border: 0;
@@ -231,7 +231,7 @@ main .main-mid .btn-buy-wrap .btn-buy {
 }
 @media screen and (max-width: 1080px) {
   main .main-mid .btn-buy-wrap .btn-buy {
-    width: 12.2rem;
+    width: 10.8rem;
     height: 1.5rem;
     font-size: 0.7rem;
     border-radius: 0.4rem;
@@ -239,7 +239,7 @@ main .main-mid .btn-buy-wrap .btn-buy {
 }
 @media screen and (max-width: 780px) {
   main .main-mid .btn-buy-wrap .btn-buy {
-    width: 6.2rem;
+    width: 5.4rem;
     height: 1rem;
     font-size: 0.5rem;
     border-radius: 0.3rem;
@@ -247,7 +247,7 @@ main .main-mid .btn-buy-wrap .btn-buy {
 }
 @media screen and (max-width: 540px) {
   main .main-mid .btn-buy-wrap .btn-buy {
-    width: 4.7rem;
+    width: 4.1rem;
     height: 0.5rem;
     font-size: 0.3rem;
     border-radius: 0.15rem;
@@ -267,16 +267,75 @@ main .main-mid .btn-buy-wrap .btn-primary:active {
 main .main-mid .about-company-text-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 80vh;
   height: 15vh;
-  border: 1px solid red;
 }
-main .main-mid .about-company-text {
+@media screen and (max-width: 1080px) {
+  main .main-mid .about-company-text-wrap {
+    width: 60vh;
+    height: 12vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .about-company-text-wrap {
+    width: 40vh;
+    height: 8vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .about-company-text-wrap {
+    width: 30vh;
+    height: 6vh;
+  }
+}
+main .main-mid .about-company-text-wrap .about-company-text {
+  text-align: center;
+}
+main .main-mid .contact-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweence;
+  align-items: center;
+  width: 80vh;
+  height: 12vh;
+}
+@media screen and (max-width: 1080px) {
+  main .main-mid .contact-text-wrap {
+    width: 60vh;
+    height: 10vh;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .contact-text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 8vh;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .contact-text-wrap {
+    width: 20vh;
+    height: 6vh;
+  }
+}
+main .main-mid .contact-text-wrap .contact-text {
   text-align: center;
   margin-bottom: 1rem;
-  border: 1px solid green;
+}
+@media screen and (max-width: 780px) {
+  main .main-mid .contact-text-wrap .contact-text {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .main-mid .contact-text-wrap .contact-text {
+    margin-bottom: 0.25rem;
+  }
 }
 
 main .main-top {
@@ -415,6 +474,7 @@ main .main-bottom {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-grow: 1;
   height: 100%;
   background-color: #101010;
 }
@@ -509,11 +569,20 @@ main .main-bottom .face-img-wrap {
   align-items: center;
   width: 96vh;
   height: 20vh;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 1630px) {
+  main .main-bottom .face-img-wrap {
+    width: 96vh;
+    height: 20vh;
+    padding-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 1080px) {
   main .main-bottom .face-img-wrap {
     width: 86vh;
     height: 15vh;
+    padding-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -538,6 +607,7 @@ main .main-bottom .face-img-wrap {
   main .main-bottom .face-img-wrap {
     width: 46vh;
     height: 8vh;
+    padding-bottom: 0.25rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -577,42 +647,48 @@ main .main-bottom .about-text-wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 103vh;
+  width: 100vh;
   height: 20vh;
+}
+@media screen and (max-width: 1630px) {
+  main .main-bottom .about-text-wrap {
+    width: 103vh;
+    height: 20vh;
+  }
 }
 @media screen and (max-width: 1080px) {
   main .main-bottom .about-text-wrap {
-    width: 95vh;
+    width: 93vh;
     height: 20vh;
   }
 }
 @media screen and (max-width: 900px) {
   main .main-bottom .about-text-wrap {
-    width: 85vh;
+    width: 83vh;
     height: 20vh;
   }
 }
 @media screen and (max-width: 780px) {
   main .main-bottom .about-text-wrap {
-    width: 62vh;
+    width: 61vh;
     height: 15vh;
   }
 }
 @media screen and (max-width: 650px) {
   main .main-bottom .about-text-wrap {
-    width: 52vh;
+    width: 51vh;
     height: 15vh;
   }
 }
 @media screen and (max-width: 540px) {
   main .main-bottom .about-text-wrap {
-    width: 47vh;
+    width: 46vh;
     height: 14vh;
   }
 }
 @media screen and (max-width: 450px) {
   main .main-bottom .about-text-wrap {
-    width: 37vh;
+    width: 36vh;
     height: 14vh;
   }
 }
@@ -646,7 +722,7 @@ main .main-bottom .conact-form-wrap {
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 50vh;
+  height: 60vh;
   background-color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -724,7 +800,7 @@ main .main-bottom .conact-form-wrap .input-group3 {
     font-size: 0.5rem;
   }
 }
-main .main-bottom .conact-form-wrap .terms-text {
+main .main-bottom .conact-form-wrap .radio-text, main .main-bottom .conact-form-wrap .terms-text {
   padding-left: 0.25rem;
 }
 main .main-bottom .conact-form-wrap .input-label {
@@ -785,7 +861,6 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  margin-top: auto;
 }
 @media screen and (max-width: 1080px) {
   footer {
@@ -822,6 +897,9 @@ footer {
   * h2 {
     font-size: 0.9rem;
   }
+  * h3 {
+    font-size: 0.85rem;
+  }
   * p {
     font-size: 0.8rem;
   }
@@ -833,6 +911,9 @@ footer {
   * h2 {
     font-size: 0.5rem;
   }
+  * h3 {
+    font-size: 0.45rem;
+  }
   * p {
     font-size: 0.4rem;
   }
@@ -843,6 +924,9 @@ footer {
   }
   * h2 {
     font-size: 0.4rem;
+  }
+  * h3 {
+    font-size: 0.35rem;
   }
   * p {
     font-size: 0.3rem;
